@@ -1,0 +1,125 @@
+/**
+ *
+ * 1.Navigation
+ *
+ */
+
+ .main-menu{
+ 	background-color: black;
+ 	top: 100%;
+ 	right: 0%;
+ 	position:absolute;
+ 	background: #464655;
+ 	height: 0px;
+ 	overflow: hidden;
+ }
+
+ .main-menu--open{
+ 	height: auto;
+ }
+
+ .main-menu ul {
+ 	list-style: none;
+ 	margin: 0;
+ 	padding: 0;
+ 	
+ 	
+
+ }
+
+.main-menu li {
+	border-bottom: 1px solid #575766;
+}
+
+.main-menu li:last-child {
+	border-bottom: none;
+}
+
+.main-menu a{
+	display: block;
+	color: #EBEBD3;
+	padding: 2em 6em;
+	text-transform: uppercase;
+}
+
+.menu-toggle{
+	padding: 1em;
+	position: absolute;
+	right: 0.75em;
+	top: 0.75em;
+	cursor: pointer;
+}
+
+.hamburger,
+.hamburger:before,
+.hamburger:after{
+	content:"";
+	display:block;
+	background: #EBEBD3;
+	height: 3px;
+	width: 1.75em;
+	border-radius: 3px;
+}
+
+.hamburger:before{
+	transform: translatey(-6px);
+}
+
+.hamburger:after{
+		transform: translatey(3px);
+}
+
+.open .hamburger{
+	transform: rotate(45deg);
+}
+
+.open .hamburger::before{
+	opacity:0;
+}
+
+.open .hamburger::after{
+	transform: translateY(-3px) rotate(-90deg);
+}
+/**1.1 Links */
+a {
+ 	color: blue;
+ 	text-decoration: none;
+ }
+
+a:hover,
+a:focus,
+a:active{
+	background: #EBEBD3;;
+ 	color: red;
+ }
+
+ /** 2. Elements */
+
+ body{
+ 	
+ 	
+ }
+
+ header{
+ 	background: #E54B4B;
+ 	color:#EBEBD3;
+ 	padding: 1em 0;
+ 	position:relative;
+ 	
+ }
+
+.logo{
+	color:#EBEBD3;
+	float:left;
+}
+
+.header-container{
+	width: 95%;
+	margin: 0 auto;
+}
+
+.header-container:after{
+	content:"";
+	clear: both;
+	display: block;
+}
